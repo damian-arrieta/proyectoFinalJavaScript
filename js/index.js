@@ -155,7 +155,7 @@ let checkout = () => {
       })
       .then((willDelete) => {
         if (willDelete) {
-            location.href='../pages/form.html';
+            location.href='./pages/form.html';
             localStorage.removeItem('cart');
         } else {
           swal("Puede seguir agregando productos al carrito");
@@ -210,7 +210,7 @@ let SearchProducts = () => {
         results.innerHTML = '';
         const text = searchBox.value.toLowerCase();
 
-        for(product of products){
+        for(const product of products){
 
             let detailsOfProducts = (product.model.toLowerCase() + product.category.toLowerCase() + product.colour.toLowerCase());
 
