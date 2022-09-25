@@ -5,7 +5,7 @@ let cart = [];
 
 
 let loadProducts = () => {
-    fetch('./data.json')
+    fetch('../data.json')
     .then((res) => res.json())
     .then((json) => {
         fullProducts = json;
@@ -155,7 +155,7 @@ let checkout = () => {
       })
       .then((willDelete) => {
         if (willDelete) {
-            location.href='./pages/form.html';
+            window.open='https://damian-arrieta.github.io/proyectoFinalJavaScript/form.html';
             localStorage.removeItem('cart');
         } else {
           swal("Puede seguir agregando productos al carrito");
