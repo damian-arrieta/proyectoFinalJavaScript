@@ -1,0 +1,22 @@
+[
+    {"id": 70009000, "model": "Z Flip4 128GB", "colour": "Phantom Black", "price": 219.999, "category": "smartphone", "img": "./img/smartphones/flip4.jpg"},
+    {"id": 70009007, "model": "Z Flip4 256GB", "colour": "Pink Gold", "price": 219.999, "category": "smartphone", "img": "./img/smartphones/flip4pink.jpg"},
+    {"id": 70009001, "model": "Z Fold4", "colour": "Phantom Black", "price": 379.999, "category": "smartphone", "img": "./img/smartphones/fold4.jpg"},
+    {"id": 70009002, "model": "S20 FE 5G", "colour": "Cloud Red", "price": 127.999, "category": "smartphone", "img": "./img/smartphones/s20fe.jpg"},
+    {"id": 70009003, "model": "S21 FE 5G", "colour": "Oliva", "price": 174.999, "category": "smartphone", "img": "./img/smartphones/s21fe.jpg"},
+    {"id": 70009004, "model": "S22", "colour": "Phantom Black", "price": 215.999, "category": "smartphone", "img": "./img/smartphones/s22.jpg"},
+    {"id": 70009005, "model": "S22+", "colour": "Green", "price": 279.999, "category": "smartphone", "img": "./img/smartphones/s22plus.jpg"},
+    {"id": 70009006, "model": "S22 ULTRA", "colour": "Phantom White", "price": 299.999, "category": "smartphone", "img": "./img/smartphones/s22ultra.jpg"},
+    {"id": 450000, "model": "Fit2", "colour": "Negro", "price": 10.999, "category": "smartwatch", "img": "./img/smartwatch/fit2.png"},
+    {"id": 450001, "model": "Watch3 41mm", "colour": "Silver", "price": 52.999, "category": "smartwatch", "img": "./img/smartwatch/watch3.png"},
+    {"id": 450002, "model": "Watch4 40mm", "colour": "Negro", "price": 61.999, "category": "smartwatch", "img": "./img/smartwatch/watch440mm.png"},
+    {"id": 450003, "model": "Watch4 44mm", "colour": "Negro", "price": 69.999, "category": "smartwatch", "img": "./img/smartwatch/watch444mm.png"},
+    {"id": 450004, "model": "Watch4 46mm", "colour": "Negro", "price": 93.999, "category": "smartwatch", "img": "./img/smartwatch/watch446mm.png"},
+    {"id": 450005, "model": "Watch Active", "colour": "Negro", "price": 26.999, "category": "smartwatch", "img": "./img/smartwatch/watchactive.png"},
+    {"id": 7000000, "model": "IA500 In-Ear 3.5mm", "colour": "Negro", "price": 2.999, "category": "auriculares", "img": "./img/auriculares/auriia500.png"},
+    {"id": 7000001, "model": "Buds2", "colour": "Negro", "price": 29.999, "category": "auriculares", "img": "./img/auriculares/buds2.png"},
+    {"id": 7000002, "model": "Buds Live", "colour": "Negro", "price": 27.999, "category": "auriculares", "img": "./img/auriculares/budslive.png"},
+    {"id": 7000003, "model": "Super Fast Charging (25w)", "colour": "Negro", "price": 6.499, "category": "cargadores", "img": "./img/cargadores/carg25w.png"},
+    {"id": 7000004, "model": "Car Charger", "colour": "Negro", "price": 8.499, "category": "cargadores", "img": "./img/cargadores/cargauto.png"},
+    {"id": 7000005, "model": "Cargador Inalámbrico 15w", "colour": "Dark Gray", "price": 21.999, "category": "cargadores", "img": "./img/cargadores/carginalam.png"}
+]

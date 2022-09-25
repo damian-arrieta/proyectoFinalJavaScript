@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body {
+	background: #ffffff;
+	font-family: 'Lato', sans-serif;
+}
+
+.header{
+    position:relative;
+	font-family: 'Open Sans', sans-serif;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #ffffff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #1315b8;
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+	text-decoration: none;
+    margin: 0 1rem;
+    color: #000000;
+}
+
+.header .navbar a:hover{
+    color: #666;
+}
+
+.container-title{
+	font-size: 2.5rem;
+	font-weight: bolder;
+	font-family: 'Open Sans', sans-serif;
+	margin: 1.5rem;
+	text-align: center
+
+}
+
+.container {
+	width: 90%;
+	max-width: 1000px;
+	padding: 40px 20px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.card {
+	width: 100%;
+	max-width: 550px;
+	position: relative;
+	color: #fff;
+	transition: .3s ease all;
+	transform: rotateY(0deg);
+	transform-style: preserve-3d;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.card.active {
+	transform: rotateY(180deg);
+}
+
+.card > div {
+	padding: 30px;
+	border-radius: 15px;
+	min-height: 315px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-shadow: 0 10px 10px 0 rgba(90,116,148,0.3);
+}
+
+.card .fordward {
+	width: 100%;
+	background: url(../img/datos-de-pago/bg-tarjeta.jpeg);
+	background-size: cover;
+}
+
+.fordward .logo-brand {
+	text-align: right;
+	min-height: 50px;
+}
+
+.fordward .logo-brand img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	max-width: 80px;
+}
+
+.fordward .chip {
+	width: 100%;
+	max-width: 50px;
+	margin-bottom: 20px;
+}
+
+.fordward .group .label {
+	font-size: 16px;
+	color: #7d8994;
+	margin-bottom: 5px;
+}
+
+.fordward .group .number,
+.fordward .group .name,
+.fordward .group .expiration {
+	color: #fff;
+	font-size: 22px;
+	text-transform: uppercase;
+}
+
+.fordward .flexbox {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.behind {
+	background: #000;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+}
+
+.behind .magnetic {
+	height: 40px;
+	background: #666;
+	width: 100%;
+	position: absolute;
+	top: 30px;
+	left: 0;
+}
+
+.behind .data {
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.behind .data p {
+	margin-bottom: 5px;
+}
+
+.behind .data #signature {
+	width: 70%;
+}
+
+.behind .data #signature .signature {
+	height: 40px;
+	background: repeating-linear-gradient(skyblue 0, skyblue 5px, orange 5px, orange 10px);
+}
+
+.behind .data #signature .signature p {
+	line-height: 40px;
+	font-family: 'Liu Jian Mao Cao', cursive;
+	color: rgb(0, 0, 0);
+	font-size: 30px;
+	padding: 0 10px;
+	text-transform: capitalize;
+}
+
+.behind .data #ccv {
+	width: 20%;
+}
+
+.behind .data #ccv .ccv {
+	background: #fff;
+	height: 40px;
+	color: #000;
+	padding: 10px;
+	text-align: center;
+}
+
+.behind .leyend {
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.behind .link-bank {
+	font-size: 14px;
+	color: #fff;
+}
+
+.container-btn .btn-open-form {
+	width: 50px;
+	height: 50px;
+	font-size: 20px;
+	line-height: 20px;
+	background: #1315b8;
+	color: #fff;
+	position: relative;
+	top: -25px;
+	z-index: 3;
+	border-radius: 100%;
+	box-shadow: -5px 4px 8px rgba(24,56,182,0.4);
+	padding: 5px;
+	transition: all .2s ease;
+	border: none;
+	cursor: pointer;
+}
+
+.container-btn .btn-open-form:hover {
+	background: #1315b8;
+}
+
+.container-btn .btn-open-form.active {
+	transform: rotate(45deg);
+}
+
+.form-card {
+	background: #fff;
+	border: 1rem solid rgba(0,0,0,.1);
+	width: 100%;
+	max-width: 700px;
+	padding: 150px 30px 30px 30px;
+	border-radius: 10px;
+	position: relative;
+	top: -150px;
+	z-index: 1;
+	clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+	transition: clip-path .3s ease-out;
+}
+
+.form-card.active {
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.form-card label {
+	display: block;
+	color: #7d8994;
+	margin-bottom: 5px;
+	font-size: 16px;
+}
+
+.form-card input,
+.form-card select,
+.btn-send {
+	border: 2px solid #CED6E0;
+	font-size: 18px;
+	height: 50px;
+	width: 100%;
+	padding: 5px 12px;
+	transition: .3s ease all;
+	border-radius: 5px;
+}
+
+.form-card input:hover,
+.form-card select:hover {
+	border: 2px solid #93BDED;
+}
+
+.form-card input:focus,
+.form-card select:focus {
+	outline: rgb(4,4,4);
+	box-shadow: 1px 7px 10px -5px rgba(90,116,148,0.3);
+}
+
+.form-card input {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.form-card .flexbox {
+	display: flex;
+	justify-content: space-between;
+}
+
+.form-card .expire {
+	width: 100%;
+}
+
+.form-card .ccv {
+	min-width: 100px;
+}
+
+.form-card .group-select {
+	width: 100%;
+	margin-right: 15px;
+	position: relative;
+}
+
+.form-card select {
+	-webkit-appearance: none;
+}
+
+.form-card .group-select i {
+	position: absolute;
+	color: #CED6E0;
+	top: 18px;
+	right: 15px;
+	transition: .3s ease all;
+}
+
+.form-card .group-select:hover i {
+	color: #93bfed;
+}
+
+.container .btn-send {
+	display: none;
+}
+
+.container .btn-send.active{
+	display: block;
+	border: none;
+	padding: 10px;
+	font-size: 22px;
+	color: #fff;
+	background: #1315b8;
+	box-shadow: 2px 2px 10px 0px rgba(0,85,212,0.4);
+	cursor: pointer;
+}
+
+.form-card .btn-send:hover {
+	background: #1315b8;
+}
+
+.footer{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    background: #eee;
+}
+
+.footer .box-container{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:1.5rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color: #000000;
+    padding:1rem 0;
+}
+
+.footer .box-container .box .links{
+    display: block;
+    font-size: 1.5rem;
+    color: #000000;
+    padding:1rem 0;
+}
+
+.footer .box-container .box .links i{
+    padding-right: .5rem;
+}
+
+.footer .box-container .box .links:hover i{
+    padding-right: 2rem;
+}
+
+
+.footer .box-container .box p{
+    line-height: 1.8;
+    font-size: 1.5rem;
+    padding:1rem 0;
+}
+
+.footer .box-container .box .share a{
+	text-decoration: none;
+    height:4rem;
+    width:4rem;
+    line-height:4rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    color: #000000;
+    margin-right: .2rem;
+    text-align: center;
+}
+
+.footer .box-container .box .share a:hover{
+    background: #1315b8;
+    color: #fff;
+}
+
+.footer .box-container .box .email{
+    width: 100%;
+    margin:.7rem 0;
+    padding:1rem;
+    border-radius: .5rem;
+    background: #ffffff;
+    font-size: 1.6rem;
+    color: #000000;
+    text-transform: none;
+}
+
+.footer .box-container .box .payment-img{
+    margin-top: 2rem;
+    height: 3rem;
+    display: block;
+}
+
+.footer .credit{
+    background: #ffffff;
+    text-align: center;
+    margin-top: 2rem;
+    padding:1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #000000;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/form-style.css">
+	
+    <title>Finaliza la compra</title>
+</head>
+<body>
+	<header class="header">
+        <h1 class="logo">TECHNO POINT</h1>
+
+        <nav class="navbar">
+            <a href="../index.html">Home</a>
+        </nav>
+    </header>
+
+	<div class="container-title">
+		<h2 class="title">TU COMPRA YA CASI ESTÁ LISTA</h2>
+	</div>
+
+    <div class="container">
+		<section class="card" id="card">
+			<div class="fordward">
+				<div class="logo-brand" id="logo-brand">
+					<!-- <img src="../img/datos-de-pago/visa.png" alt=""> -->
+				</div>
+				<img src="../img/datos-de-pago/chip-tarjeta.png" class="chip" alt="">
+				<div class="data">
+					<div class="group" id="number">
+						<p class="label">Número Tarjeta</p>
+						<p class="number">#### #### #### ####</p>
+					</div>
+					<div class="flexbox">
+						<div class="group" id="name">
+							<p class="label">Nombre Tarjeta</p>
+							<p class="name">Nombre Apellido</p>
+						</div>
+
+						<div class="group" id="expiration">
+							<p class="label">Expiracion</p>
+							<p class="expiration"><span class="month">MM</span> / <span class="year">AA</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="behind">
+				<div class="magnetic"></div>
+				<div class="data">
+					<div class="group" id="signature">
+						<p class="label">Firma</p>
+						<div class="signature"><p></p></div>
+					</div>
+					<div class="group" id="ccv">
+						<p class="label">CCV</p>
+						<p class="ccv"></p>
+					</div>
+				</div>
+				<p class="leyend">Tarjeta solo válida para uso al titular cuya firma consta arriba. Válida entre las fechas indicadas</p>
+				<a href="#" class="link-bank">www.banco.com</a>
+			</div>
+		</section>
+
+		<div class="container-btn">
+			<button class="btn-open-form" id="btn-open-form">
+				<i class="fas fa-plus"></i>
+			</button>
+		</div>
+
+
+		<form action="" id="form-card" class="form-card">
+			<div class="group">
+				<label for="inputNumber">Número Tarjeta</label>
+				<input type="text" id="inputNumber" maxlength="19" autocomplete="off">
+			</div>
+			<div class="group">
+				<label for="inputName">Nombre</label>
+				<input type="text" id="inputName" maxlength="19" autocomplete="off">
+			</div>
+			<div class="flexbox">
+				<div class="group expire">
+					<label for="selectMonth">Expiracion</label>
+					<div class="flexbox">
+						<div class="group-select">
+							<select name="month" id="selectMonth">
+								<option disabled selected>Mes</option>
+							</select>
+							<i class="fas fa-angle-down"></i>
+						</div>
+						<div class="group-select">
+							<select name="year" id="selectYear">
+								<option disabled selected>Año</option>
+							</select>
+							<i class="fas fa-angle-down"></i>
+						</div>
+						<div class="group-select">
+							<select name="cuotas" id="selectCuotas">
+								<option disabled selected>Cuotas</option>
+							</select>
+							<i class="fas fa-angle-down"></i>
+						</div>
+					</div>
+				</div>
+				<div class="group ccv">
+					<label for="inputCCV">CCV</label>
+					<input type="text" id="inputCCV" maxlength="3">
+				</div>
+			</div>
+		</form>
+		<button type="submit" onclick="send();" class="btn-send">Enviar</button>
+	</div>
+
+	<footer class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3> TECHNOPOINT </h3>
+                <p>Somos tu punto de tecnología.</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>Contacto</h3>
+                <a class="links"> <i class="fas fa-phone"></i> +111-111-1111 </a>
+                <a class="links"> <i class="fas fa-envelope"></i> technopoint@mail.com </a>
+                <a class="links"> <i class="fas fa-map-marker-alt"></i> La Pampa, Argentina </a>
+            </div>
+            <div class="box">
+                <h3>Pagá tranquilo</h3>
+                <p>100% seguro</p>
+                <img src="../img/payment.png" class="payment-img" alt="">
+            </div>
+        </div>
+    
+        <div class="credit">Sin fines comerciales, es el trabajo final del curso de JavaScript | Comisión 41570 en Coderhouse </div>
+    </footer>
+	
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/form.js"></script>
+</body>
+</html>

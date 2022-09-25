@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Techno Point</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">TECHNO POINT</h1>
+
+        <nav class="navbar">
+            <a href="./index.html" onclick="setCategoryFilter('');">Home</a>
+            <a href="#tienda" onclick="setCategoryFilter('');">Tienda</a>
+            <a href="#smartphones" onclick="setCategoryFilter('smartphone');">Smartphones</a>
+            <a href="#smartwatches" onclick="setCategoryFilter('smartwatch');">Smartwatches</a>
+            <a href="#auriculares" onclick="setCategoryFilter('auriculares');">Auriculares</a>
+            <a href="#cargadores" onclick="setCategoryFilter('cargadores');">Cargadores</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="Buscar...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+        
+        <div class="scroll">
+            <div class="shopping-cart" id="cart">
+                <div class="box">
+                    <div class="content">
+                        <h3 class="title-cart">No tenés productos agregados</h3>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </header>
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>NUEVOS FLIP 4 | FOLD 4</h3>
+            <p>Encontralos acá</p>
+            <a href="#smartphones" class="btn-white" onclick="setCategoryFilter('smartphone')">COMPRAR</a>
+        </div>
+
+    </section>
+
+    <!-- Products Sections: -->
+
+    <section class="products">
+    
+        <div class="box-container" id="products">
+    
+        </div>
+    
+    
+    </section>
+
+    <section class="features" id="features">
+
+        <h2 class="heading"> Somos TechnoPoint </h2>
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <img src="img/undraw_logistics_x4dc.png" alt="">
+                <h3>Envío a toda Argentina</h3>
+                <p>Tu compra llega, estés donde estés.</p>
+            </div>
+    
+            <div class="box">
+                <img src="img/undraw_Pay_online_re_aqe6.png" alt="">
+                <h3>Paga online, rápido y seguro</h3>
+                <p>Abona tus compras con credito o débito. Tu decides.</p>
+            </div>
+    
+            <div class="box">
+                <img src="img/undraw_Terms_re_6ak4.png" alt="">
+                <h3>Garantía oficial</h3>
+                <p>Todos nuestros productos cuentan con 12 meses de gantía oficial. Nosotros nos hacemos cargo del retiro, arreglo y entrega del mismo.</p>
+            </div>
+    
+        </div>
+    
+    </section>
+    
+    <footer class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3> TECHNOPOINT </h3>
+                <p>Somos tu punto de tecnología.</p>
+                <div class="share">
+                    <a href="https://www.facebook.com/" class="fab fa-facebook-f" target="_blank"></a>
+                    <a href="https://twitter.com/" class="fab fa-twitter" target="_blank"></a>
+                    <a href="https://www.instagram.com/" class="fab fa-instagram" target="_blank"></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>Contacto</h3>
+                <a class="links"> <i class="fas fa-phone"></i> +111-111-1111 </a>
+                <a class="links"> <i class="fas fa-envelope"></i> technopoint@mail.com </a>
+                <a class="links"> <i class="fas fa-map-marker-alt"></i> La Pampa, Argentina </a>
+            </div>
+            <div class="box">
+                <h3>Pagá tranquilo</h3>
+                <p>100% seguro</p>
+                <img src="img/payment.png" class="payment-img" alt="">
+            </div>
+        </div>
+    
+        <div class="credit">Sin fines comerciales, es el trabajo final del curso de JavaScript | Comisión 41570 en Coderhouse </div>
+    </footer>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
