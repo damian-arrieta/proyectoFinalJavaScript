@@ -149,7 +149,7 @@ let send = () => {
   }
 }).then((result) => {
   if (result.dismiss === Swal.DismissReason.timer) {
-    location.href='../index.html';
+    location.href='./index.html';
 	localStorage.removeItem('total');
   }
 });
