@@ -155,7 +155,7 @@ let checkout = () => {
       })
       .then((willDelete) => {
         if (willDelete) {
-            location.href = '../form.html';
+            location.href = './form.html';
             localStorage.removeItem('cart');
         } else {
           swal("Puede seguir agregando productos al carrito");
