@@ -155,7 +155,7 @@ let checkout = () => {
       })
       .then((willDelete) => {
         if (willDelete) {
-            window.open='https://damian-arrieta.github.io/proyectoFinalJavaScript/form.html';
+            location.href = '../form.html';
             localStorage.removeItem('cart');
         } else {
           swal("Puede seguir agregando productos al carrito");
