@@ -5,7 +5,7 @@ let cart = [];
 
 
 let loadProducts = () => {
-    fetch('../data.json')
+    fetch('./data.json')
     .then((res) => res.json())
     .then((json) => {
         fullProducts = json;
