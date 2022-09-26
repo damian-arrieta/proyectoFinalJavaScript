@@ -49,12 +49,12 @@ form.inputNumber.addEventListener('keyup', (e) => {
 	if(inputValue[0] == 4){
 		logoBrand.innerHTML = '';
 		const img = document.createElement('img');
-		img.src = '../img/datos-de-pago/visa.png';
+		img.src = './img/datos-de-pago/visa.png';
 		logoBrand.appendChild(img);
 	} else if(inputValue[0] == 5){
 		logoBrand.innerHTML = '';
 		const img = document.createElement('img');
-		img.src = '../img/datos-de-pago/mastercard.png';
+		img.src = './img/datos-de-pago/mastercard.png';
 		logoBrand.appendChild(img);
 	}
 	showFront();
