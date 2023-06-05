@@ -1,6 +1,6 @@
 # Proyecto Final JavaScript - Comision 41570
 
-El objetivo de este proyecto era realizar una página web interactiva en JavaScript. La misma simula distintos procesos (Mostrar productos, agregar al carrito, descontar stock y finalizar proceso de compra. Utilicé AJAX y JSON para obtener datos, e hice uso de librerías, promises y asincronía para controlar eventos en la interfaz y producir animaciones en respuesta.
+El objetivo de este proyecto era realizar una página web interactiva en JavaScript. La misma simula distintos procesos (Mostrar productos, agregar al carrito, descontar stock y finalizar proceso de compra). Utilicé AJAX y JSON para obtener datos, e hice uso de librerías, promises y asincronía para controlar eventos en la interfaz y producir animaciones en respuesta.
 
 ## Contenido de valor:
 
@@ -12,7 +12,7 @@ El objetivo de este proyecto era realizar una página web interactiva en JavaScr
 
 **Client:** JavaScript, HTML & CSS.
 
-## Nota final del proyecto
+## Nota final del proyecto: 9
 
 [![certificado.png](https://i.postimg.cc/4xDsfzxM/633d892316c306000ecab158.png)](https://postimg.cc/MnmhtfRb)
 
